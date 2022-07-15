@@ -1,0 +1,31 @@
+Atividades aula 1:
+    ✔ Configurar o Sequelize @done(22-07-14 21:20)
+    ✔ Instalar o dotenv e configurar @done(22-07-14 21:21)
+    ✔ Criar a migrations de usuários de acordo com o DER. @done(22-07-14 21:21)
+    ☐ Criar seeder de usuários para cadastrar 5 usuários.
+    ☐ Criar model de usuários
+    
+Atividades aula 2 - Processo de cadastro e login completo:
+    ☐ No Controller de autenticação, realizar as seguintes implementações:
+        ☐ Controller para criar um usuário e salvar no banco. Obs: Não pode existir mais de 1 usuário com o mesmo email.
+        ☐ Controller para Realizar o login do usuário.
+        ☐ Implementação da session
+        ☐ Proteger as rotas: /home e /publicar para somente usuarios autenticados consigam acessar. Caso algum usuário tente acessar estas rotas e não estiver autenticado, deve ser redirecionar o para a página de login.
+        ☐ Lembrem-se de retornar para a view, erros que podem acontecer.
+        ☐ Configurar ejs da página inicial de de post para exibir o nome do usuário logado.
+
+Atividades aula 3 - Feature de publicações:
+    ☐ Criar migration de publicações de acordo com o DER
+    ☐ Criar o model de publicações
+    ☐ Realizar o seus relacionamentos
+    ☐ Configurar e implementar o multer para salvar as publicacoes na pasta: /public/img/publications
+    ☐ Criar o método createPublication no controller para capturar os dados do form, imagem e id do usuário e salvar no banco de dados.
+
+Atividades aula 4 - Feature do feed e comentários:
+    ☐ Criar os métodos para exibir na home todas as publicações que tem salvo no banco de dados
+    ☐ Ao renderizar as publicações na view home, a data e hora da publicação deve estar no formato da localidade do usuário
+    ☐ Criar a migration de comentários de acordo com o DER
+    ☐ Criar a model de comentários e realizar os seus relacionamentos
+    ☐ Criar métodos no controller e configurar a home para exibir na home todos os comentários de acordo com a sua publicação.
+    *Obs: Para ficar mais bonito a visualização, da para utilizar a tag details do html para agrupar todos os comentários dentro de uma tag.
+    ☐ Desafio: Mostrar a quantidade de comentários que cada publicação possui, exemplo: Publicação de id 1: 2 comentários.
