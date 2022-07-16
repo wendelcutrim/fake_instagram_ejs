@@ -12,16 +12,16 @@
         <img src="/img/banner-login.png" alt="" srcset="" />
         <p>Cadastre-se para ver fotos dos seus amigos</p>
       </div>
-      <form class="form-auth card">
+      <form class="form-auth card" action="/registro" method="POST">
+        <% if(typeof error !== "undefined") { %>
+          <h3 class="error"><%= error %></h3>
+        <% } %>
         <div id="logo">
           <img src="img/logo.png" alt="" />
         </div>
         <input type="email" name="email" placeholder="Digite seu email" />
         <input type="text" name="name" placeholder="Digite seu nome completo" />
-        <input
-          type="text"
-          name="username"
-          placeholder="Digite seu nome de usuario"
+        <input type="text" name="username" placeholder="Digite seu nome de usuario"
         />
         <input type="password" name="password" placeholder="Senha" />
         <button type="submit">Cadastra-se</button>
